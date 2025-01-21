@@ -1,0 +1,28 @@
+
+================================== Parameters ==================================
+ model_id: meta-llama/Llama-3.2-1B-Instruct
+ cuda_device: 2
+ max_tokens: 4096
+ max_attempts_per_request: 1
+ cache_dir: /cache
+ temperature: 0.0
+================================================================================
+
+Device set to use cuda:0
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+
+------------------------------------ Prompt ------------------------------------
+Hello, LLM!
+
+----------------------------------- Response -----------------------------------
+Hello! How can I assist you today?
+
+--------------------------------------------------------------------------------
+Time> 0.84s
+
+================================================================================
+                                    Finished                                    
+

@@ -1,0 +1,34 @@
+services:
+  my_script:
+    image: image_template
+    env_file:
+      - .env
+    container_name: container_template
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
+    volumes:
+      - .:/home
+    working_dir: /home
+    command: sh -c "python3 -u my_script.py > /home/logs/my_script.log 2>&1"
+    restart: "no"
+
+  hf_inference:
+    image: hf_template
+    env_file:
+      - .env
+    container_name: container_template_hf
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
+    volumes:
+      - .:/home
+    working_dir: /home
+    command: sh -c "python3 -u hf_inference.py > /home/logs/hf_inference.log 2>&1"
+    restart: "no"

@@ -1,0 +1,8 @@
+{
+    "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+    "cuda_device": "0",
+    "max_tokens": 4096,
+    "max_attempts_per_request": 1,
+    "cache_dir": "./cache",
+    "temperature": 0.0
+}
