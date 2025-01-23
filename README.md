@@ -68,10 +68,6 @@ Ejecutar todos los comandos desde el path del proyecto (`cd project/`).
    ```
    docker compose run --rm -d MY_SCRIPT
    ```
-   o
-   ```
-   docker compose run --rm MY_SCRIPT &
-   ```
 - Elegir el nombre del servicio (establecido en el paso "i" del `docker-compose.yml`).
 - El script se ejecutará en segundo plano.
 - El contenedor se eliminará automáticamente al detenerlo.
